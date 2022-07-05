@@ -1,0 +1,20 @@
+@import '../base/colors';
+
+.button {
+    width: 100%;
+    max-width: 353px;
+    border: none;
+    background-color: $yellow_1;
+    border-radius: 70px;
+    padding: 16px 0;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    margin-top: 46px;
+    cursor: pointer;
+
+    &:disabled {
+        background-color: $grey_2;
+        color: $color-text--alt;
+    }
+}

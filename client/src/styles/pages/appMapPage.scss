@@ -1,0 +1,11 @@
+.mapPage {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 102px);
+    top: 102px;
+
+    .map-container {
+        width: 100%;
+        height: 100%;
+    }
+}

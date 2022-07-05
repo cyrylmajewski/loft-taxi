@@ -1,0 +1,86 @@
+@use 'styles/base/normalize';
+@use 'styles/components/components';
+@use 'styles/pages/pages';
+
+@import 'styles/base/colors';
+
+$font-main: 'Roboto', 'Helvetica Neue', sans-serif;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $font-main;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+    color: $black_1;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+html,
+body,
+#root,
+#root>.App {
+    height: 100%
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.h-1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-text;
+
+    &.bold, & > .bold {
+        font-weight: 700;
+    }
+
+    &.grey_1, & > .grey_1 {
+        color: $grey_1;
+    }
+
+    &.yellow_1, & > .yellow_1 {
+        color: $yellow_1;
+    }
+
+    &.t-d-none, & > .t-d-none {
+        text-decoration: none;
+    }
+
+    &.t-a-left, & > .t-a-left {
+        text-align: left;
+    }
+
+    &.t-a-center, & > .t-a-center {
+        text-align: center;
+    }
+
+    &.t-a-right, & > .t-a-right {
+        text-align: right;
+    }
+}

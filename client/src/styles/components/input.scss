@@ -1,0 +1,27 @@
+@import '../base/flex';
+@import '../base/colors';
+
+.input {
+    @include flex($dir: column);
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 25px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    input {
+        width: 100%;
+        max-width: 355px;
+        border: none;
+        padding: 11px 0;
+        border-bottom: 2px solid #E4E4E4;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
